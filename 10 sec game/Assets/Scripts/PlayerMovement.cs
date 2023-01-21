@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
 {
 public float speed = 5f;
     public int maxHealth = 5;
-    public GameObject projectilePrefab;
     public AudioClip hitSound;
     public AudioClip Music;
     public AudioClip Win;
@@ -27,11 +26,11 @@ public float speed = 5f;
     bool isInvincible;
     float invincibleTimer;
     
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     Vector2 currentInput;
     
-    Animator anim;
+    public Animator anim;
     Vector2 lookDirection = new Vector2(0, -1);
     AudioSource audioSource;
     public ParticleSystem hitParticle;
